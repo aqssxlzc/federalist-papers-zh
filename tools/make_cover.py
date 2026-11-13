@@ -1,12 +1,26 @@
 #!/usr/bin/env python3
 """Generate a simple cover image for the EPUB."""
+import os
+from pathlib import Path
+
 from PIL import Image, ImageDraw, ImageFont
 
 W, H = 1200, 1800
 NAVY = (18, 28, 46)
 GOLD = (198, 164, 92)
 CREAM = (238, 232, 218)
-FONT = "/system/fonts/NotoSansCJK-Regular.ttc"
+
+CANDIDATES = [
+    os.environ.get("CJK_FONT", ""),
+    "/system/fonts/NotoSansCJK-Regular.ttc",          # Android / Termux
+    "/usr/share/fonts/opentype/noto/NotoSansCJK-Regular.ttc",
+    "/usr/share/fonts/truetype/noto/NotoSansCJK-Regular.ttc",
+    "/System/Library/Fonts/PingFang.ttc",             # macOS
+    "C:/Windows/Fonts/msyh.ttc",                       # Windows
+]
+FONT = next((p for p in CANDIDATES if p and Path(p).exists()), None)
+if FONT is None:
+    raise SystemExit("找不到 CJK 字体；请用环境变量 CJK_FONT 指定字体文件。")
 
 img = Image.new("RGB", (W, H), NAVY)
 d = ImageDraw.Draw(img)

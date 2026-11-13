@@ -2,6 +2,11 @@
 set -euo pipefail
 cd "$(dirname "$0")"
 
+mkdir -p build dist
+if [ ! -f build/cover.png ]; then
+  python3 -I tools/make_cover.py
+fi
+
 python3 -I tools/merge.py zh build/book.md --with-appendix
 
 pandoc build/book.md \
