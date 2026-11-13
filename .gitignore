@@ -24,3 +24,7 @@ build/cover.png
 # Python
 __pycache__/
 *.pyc
+
+# Article research files (local only)
+article/refs/
+article/*.html
