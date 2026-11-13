@@ -65,6 +65,15 @@ python3 -I tools/check_meta.py zh notes/index.json   # 标题、日期、脚注�
 - 杰伊：第 2—5、64 篇。
 - 第 18—20 篇：旧题“汉密尔顿与麦迪逊”，今多认为汉密尔顿执笔、取材于麦迪逊札记。
 
-## 版权
+## 许可
 
-底本为公有领域文本；本译文为原创翻译，供阅读与研究使用。
+- **英文底本**：公有领域（Project Gutenberg eBook #18）。
+- **中文译文、背景导读、作者分析、注释及附录**：© 2026 aqssxlzc，采用 [Creative Commons Attribution 4.0 International（CC BY 4.0）](https://creativecommons.org/licenses/by/4.0/) 许可。
+
+建议署名：
+
+> 《联邦党人文集》中文全译本，作者 aqssxlzc，来源
+> https://github.com/aqssxlzc/federalist-papers-zh，许可 CC BY 4.0。
+> 如对作品作出修改，请注明修改。
+
+许可全文见仓库根目录的 [`LICENSE`](LICENSE)。

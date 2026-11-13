@@ -19,6 +19,7 @@ pandoc build/book.md \
   --metadata subtitle="The Federalist Papers" \
   --metadata author="亚历山大·汉密尔顿、詹姆斯·麦迪逊、约翰·杰伊" \
   --metadata lang=zh-CN \
+  --metadata rights="CC BY 4.0 (https://creativecommons.org/licenses/by/4.0/)" \
   --metadata date="2026"
 
 pandoc build/book.md \
@@ -26,14 +27,16 @@ pandoc build/book.md \
   --standalone --toc --toc-depth=1 \
   --css build/style.css \
   --metadata title="联邦党人文集" \
-  --metadata lang=zh-CN
+  --metadata lang=zh-CN \
+  --metadata rights="CC BY 4.0 (https://creativecommons.org/licenses/by/4.0/)"
 
 pandoc build/book.md \
   -o "dist/联邦党人文集.docx" \
   --toc --toc-depth=1 \
   --metadata title="联邦党人文集" \
   --metadata author="亚历山大·汉密尔顿、詹姆斯·麦迪逊、约翰·杰伊" \
-  --metadata lang=zh-CN
+  --metadata lang=zh-CN \
+  --metadata rights="CC BY 4.0 (https://creativecommons.org/licenses/by/4.0/)"
 
 echo "built:"
 ls -lh dist/
