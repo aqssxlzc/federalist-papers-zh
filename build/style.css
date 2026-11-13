@@ -1,0 +1,61 @@
+html {
+  font-family: "Noto Serif CJK SC", "Songti SC", "SimSun", serif;
+}
+body {
+  line-height: 1.85;
+  margin: 0 1.2em;
+  text-align: justify;
+}
+h1 {
+  font-size: 1.5em;
+  line-height: 1.4;
+  margin: 1.4em 0 0.6em;
+  text-align: center;
+  page-break-before: always;
+}
+h2 {
+  font-size: 1.15em;
+  margin: 1.2em 0 0.5em;
+}
+p {
+  margin: 0;
+  text-indent: 2em;
+}
+p.first, h1 + p, h2 + p {
+  text-indent: 2em;
+}
+blockquote {
+  margin: 0.8em 1.5em;
+  font-size: 0.92em;
+  color: #444;
+}
+blockquote p {
+  text-indent: 0;
+}
+em {
+  font-style: italic;
+}
+hr {
+  border: none;
+  border-top: 1px solid #999;
+  margin: 1.5em 0;
+}
+table {
+  border-collapse: collapse;
+  width: 100%;
+  font-size: 0.8em;
+  margin: 0.8em 0;
+}
+th, td {
+  border: 1px solid #bbb;
+  padding: 0.25em 0.4em;
+  text-align: left;
+  vertical-align: top;
+}
+.footnotes {
+  font-size: 0.85em;
+  line-height: 1.6;
+}
+.footnotes p {
+  text-indent: 0;
+}
