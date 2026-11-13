@@ -12,8 +12,8 @@
 
 ## 文件
 
-- **联邦党人文集.epub** —— 推荐阅读，含封面、目录、脚注
-- **联邦党人文集.docx** —— 可编辑版本
+- **federalist-papers-zh-v1.0.0.epub** —— 推荐阅读，含封面、目录、脚注
+- **federalist-papers-zh-v1.0.0.docx** —— 可编辑版本
 
 ## 底本
 
